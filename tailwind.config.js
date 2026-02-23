@@ -22,14 +22,14 @@ module.exports = {
       },
 
       backgroundImage: {
-        'eng1' : 'url("../src/bnw.webp")',
-        'card1' : 'url("../src/card1.webp")',
-        'card2' : 'url("../src/card2.webp")',
-        'card3' : 'url("../src/card3.webp")',
-        'card4' : 'url("../src/card4.webp")',
-        'card5' : 'url("../src/card5.webp")',
-        'bg2' : 'url("../src/bg2.webp")',
-        'bg1' : 'url("../src/bg1.webp")',
+        'eng1' : 'url("./src/bnw.webp")',
+        'card1' : 'url("./src/card1.webp")',
+        'card2' : 'url("./src/card2.webp")',
+        'card3' : 'url("./src/card3.webp")',
+        'card4' : 'url("./src/card4.webp")',
+        'card5' : 'url("./src/card5.webp")',
+        'bg2' : 'url("./src/bg2.webp")',
+        'bg1' : 'url("./src/bg1.webp")',
       },
 
       fontFamily: {
