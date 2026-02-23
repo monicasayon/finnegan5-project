@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./*.{html,js}"], // Include files in src/ so Tailwind can scan them
+  content: [
+    "./index.html",
+    "./src/**/*.{html,js}", "./*.{html,js}"
+  ],
   theme: {
     extend: {
       keyframes: {
