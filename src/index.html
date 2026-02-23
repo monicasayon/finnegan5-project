@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnegan 5</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="icon" href="f5logo-500x500.webp" type="image/webp">
+</head>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const logo = document.getElementById('intro-logo');
+      const content = document.getElementById('hero-content');
+
+      setTimeout(() => {
+        // Logo: Becomes a subtle watermark
+        // We scale it up (scale-150) to make it feel like it's "enveloping" the text
+        logo.classList.add('opacity-15', 'scale-200', 'blur-[2px]');       
+        // Content: Fades in over the logo
+        content.classList.remove('opacity-0', 'translate-y-10');
+        content.classList.add('opacity-100', 'translate-y-0');
+      }, 200); 
+    });
+</script>
+
+
+
+<body class="bg-black h-screen box-border p-0 m-0">
+    <header id="header" class="relative top-0 left-0 w-full h-auto overflow-hidden">
+      <img id="hero-img" src="herobackground.webp" alt="Hero Scaffold" class="w-full object-cover" >
+
+      <div class="absolute inset-0 flex items-center justify-center">
+
+        <div id="intro-logo" class="absolute z-20 transition-all duration-200 ease-in-out pointer-events-none">
+        <!--  <img src="3dlogo.webp" class="w-150" alt="3d logo" class="w-32 md:w-48"> -->
+        </div>
+
+        <div id="hero-content" class="absolute w-300 font-[Montserrat] left-70 top-50 z-10 opacity-0 translate-y-10 transition-all duration-1000 ease-out text-center px-6">
+          <h1 class="text-4xl text-black font-bold drop-shadow-4xl text-left">Engineering Safety</h1>
+          <div class="flex items-center justify center font-bold text-4xl text-black drop-shadow-2xl mb-4">
+            <span>Building&nbsp;</span>
+
+            <div class="h-[1.2em] overflow-hidden">
+              <ul class="flex flex-col animate-flip text-zinc-900">
+                <li class="h-[1.2em] flex items-center">Compliance</li>
+                <li class="h-[1.2em] flex items-center">Safety</li>
+                <li class="h-[1.2em] flex items-center">Access</li>
+                <li class="h-[1.2em] flex items-center">Design</li>
+                <li class="h-[1.2em] flex items-center">Solutions</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-lg font-[Montserrat] w-200 text-left">Expert fire safety, accessibility compliance, and engineering consultancy for Ireland's most demanding projects. From planning to completion.</p>
+          <div class="grid grid-cols-[auto_auto] gap justify-start">
+            <button class="mt-6 px-6 py-3 bg-black text-white border border-zinc-900 rounded-full hover:bg-zinc-900 hover:text-white hover:-translate-y-0.5 transition-colors duration-300">Get In Touch</button>
+            <button class="mt-6 px-6 py-3 bg-transparent text-black border border-zinc-900 rounded-full hover:bg-zinc-900 hover:text-white hover:-translate-y-0.5transition-colors duration-300 ml-4">Our Services</button>
+          </div>
+        </div>
+      <!-- -->
+    </header>
+    <nav id="main-nav" class="fixed top-5 left-1/2 w-120 text-zinc-950 -translate-x-1/2 z-50 flex items-center justify-center gap-4 px-6 py-5 h-12 rounded-full border border-zinc-900 backdrop-blur-sm bg-white/10">
+          <a id="navlogo" href="index.html"><img src="f5logo-500x500.webp" alt="logo" class="w-6 h-6 stroke-4"></a>
+          <a href="#" class="font-[Montserrat] text-sm ml-4">Services</a>
+          <a href="#" class="font-[Montserrat] text-sm ml-4">About F5</a>
+          <a href="#" class="font-[Montserrat] text-sm ml-4">Resources</a>
+          <a href="#" class="font-[Montserrat] text-sm ml-4">Contact</a>
+    </nav>
+
+    <section id="introduction" class="font-[Montserrat] flex flex-col justify-center">
+      <div id="introtop" class="z-30 min-h-screen mt-4 w-full bg-fixed mask-b-from-80% mask-t-from-80% text-white flex flex-col justify-center items-center" style="background-image: url('bg2.webp'); background-position: center; background-size: cover;">
+        <h1 id="introh1" class="text-6xl text-center text-shadow-sm text-shadow-black font-manrope font-bold mb-6">FINNEGAN 5 <br>ENGINEERING</h1>
+        <p class="text-2xl text-center w-150 text-shadow-sm text-shadow-black">F5 Engineering turns complex regulatory requirements into clear, actionable solutions that keep your project on track.</p>
+      </div>
+      <h1 class="relative top-6 text-sm text-white self-center mb-10">TRUSTED BY LEADING DEVELOPERS AND ORGANIZATIONS ACROSS IRELAND<br></h1>
+      <div id="organizations" class="relative left-1/2 z-20 -translate-x-1/2 flex items-center justify-center gap-16">
+          <img src="org1.webp" alt="Organization 1" class="w-16 h-auto mx-4 rounded-md">
+          <img src="org2.webp" alt="Organization 2" class="w-16 h-auto mx-4 rounded-md">
+          <img src="org3.webp" alt="Organization 3" class="w-16 h-auto mx-4 rounded-md">
+      </div>
+    </section>
+    <main id="main" class="z-20 w-full bg-black text-white min-h-screen p-16 font-[Montserrat]">
+      <div id="maintop" class="flex flex-col md:flex-row justify-between items-end mb-30">
+        <h2 class="text-7xl font-nevis uppercase">Five <br> Disciplines</h2>
+        <p class="italic text-2xl text-zinc-400 max-w-md">
+          One team, integrated from early-stage concept to final project handover.
+        </p>
+      </div>
+      <div class="z-21 grid grid-cols-1 md:grid-cols-5 gap-4 border-t border-zinc-800 pt-10">
+        <div class="grid grid-rows-[auto_auto_1fr_auto] bg-card1 bg-cover bg-no-repeat bg-center hover:border border-zinc-700 rounded-lg p-6 transition-colors duration-300">
+          <span class="text-zinc-700 text-5xl group-hover:text-white transition-colors">01</span>
+          <h3 class="font-bold text-md mt-4 mb-2 tracking-wide">Fire Safety Engineering</h3>
+          <p class="text-sm text-zinc-500">Navigate complex fire regulations with certified expertise. FSC applications, fire engineering design, risk assessments, and TGD B compliance for all building types.</p>
+          <button href="#" class="mt-4 px-4 py-2 bg-transparent text-white border border-zinc-600 rounded hover:bg-zinc-600 transition-colors duration-300" >Learn More</button>
+        </div>
+        <div class="grid grid-rows-[auto_auto_1fr_auto] group cursor-default hover:border border-zinc-700 rounded-lg p-6 transition-colors duration-300">
+          <span class=" text-zinc-700 text-5xl group-hover:text-white transition-colors">02</span>
+          <h3 class="font-bold text-md mt-4 mb-2 tracking-wide">Fire Safety Compliance</h3>
+          <p class="text-sm text-zinc-500">Ensure ongoing safety with comprehensive fire risk assessments, site inspections, and fire safety management plans.</p>
+          <button href="#" class="mt-4 px-4 py-2 bg-transparent text-white border border-zinc-600 rounded hover:bg-zinc-600 transition-colors duration-300" >Learn More</button>
+        </div>
+        <div class="grid grid-rows-[auto_auto_1fr_auto] group cursor-default hover:border border-zinc-700 rounded-lg p-6 transition-colors duration-300">
+          <span class="text-zinc-700 text-5xl group-hover:text-white transition-colors">03</span>
+          <h3 class=" font-bold text-md mt-4 mb-2 tracking-wide">Disability Access</h3>
+          <p class="self-start text-sm text-zinc-500">Ensure universal accessibility. DAC applications, access universal design consultancy for inclusive buildings.</p>
+          <button href="#" class="mt-4 px-4 py-2 bg-transparent text-white border border-zinc-600 rounded hover:bg-zinc-600 transition-colors duration-300" >Learn More</button>
+        </div>
+        <div class="grid grid-rows-[auto_auto_1fr_auto] group cursor-default hover:border border-zinc-700 rounded-lg p-6 transition-colors duration-300">
+          <span class="text-zinc-700 text-5xl group-hover:text-white transition-colors">04</span>
+          <h3 class="font-bold text-md mt-4 mb-2 tracking-wide">Health and Safety</h3>
+          <p class="text-sm text-zinc-500">Comprehensive PSDP services design risk assessments, safety file coordination, and construction stage safety management.</p>
+          <button href="#" class="mt-4 px-4 py-2 bg-transparent text-white border border-zinc-600 rounded hover:bg-zinc-600 transition-colors duration-300" >Learn More</button>
+        </div>
+        <div class="grid grid-rows-[auto_auto_1fr_auto] group cursor-default hover:border border-zinc-800 rounded-lg p-6 transition-colors duration-300">
+          <span class=" text-zinc-700 text-5xl group-hover:text-white transition-colors">05</span>
+          <h3 class="font-bold text-md mt-4 mb-2 tracking-wide">Project Management & Interior Design Support</h3>
+          <p class="text-sm text-zinc-500">Technical design consultancy, architect coordination, interior design concepts, and 3D visualization services.</p>
+          <button href="#" class="mt-4 px-4 py-2 bg-transparent text-white border border-zinc-600 rounded hover:bg-zinc-600 transition-colors duration-300" >Learn More</button>
+        </div>
+      </div>
+    </main>
+
+    <section id="works" class="w-full flex flex-col justify-center items-start text-left p-20 font-[Montserrat] cursor-default">
+      <div class="z-30 text-white flex flex-col justify-start items-start bg-black mb-20">
+        <h1 class="text-6xl font-bold font-[Garamond] mb-6">Works that speaks for itself<br></h1>
+        <p class="w-120 mb-16">Fire safety, accessibility, and engineering solutions delivered across Ireland's most demanding projects.</p>
+        <div class="flex flex-row h-10 gap-4">
+          <p class="text-white transition-colors duration-300">SELECTED PROJECTS</p>
+          <span> / </span>
+          <p class="text-zinc-500 hover:text-white transition-colors duration-300">VIEW ALL PROJECTS</p>
+        </div>
+      </div>
+
+      <div id="work-gallery" class="w-full grid grid-rows-[1fr_1fr_1fr] gap-10 justify-start items-start text-white">
+
+        <div class="w-full h-80 bg-black/50 flex flex-row items-start justify-center rounded-lg gap-10 hover:outline-1 hover:outline-zinc-800 hover:outline-offset-4 transition-colors duration-500">
+          <img src="project1.webp" alt="Project 1" class="w-1/2 h-full object-cover rounded-lg transition-colors duration-300">
+          <div class="p-8 flex justify-start items-start flex-col gap-4">
+            <h2 class="text-3xl font-bold font-[Garamond]">Nuremore Estate</h2>
+            <p class="text-sm text-zinc-500"><span class="font-semibold text-zinc-300">Hotel & Hospitality</span><span>  /  </span> Co. Monaghan<span>  /  </span> 2025</p>
+            <p class="text-zinc-300 text-sm">Comprehensive fire safety engineering and disability access certification for this historic estate hotel, ensuring full compliance with Irish building regulations while preserving the character of the property.</p>
+            <div class="flex flex-row justify-center gap-2 items-center text-sm text-zinc-500">
+              <p class="rounded-full border border-zinc-800 gap-1 px-3 py-1">Fire Safety</p>
+              <p class="rounded-full border border-zinc-800 gap-1 px-3 py-1">Access Compliance</p>
+              <p class="rounded-full border border-zinc-800 gap-1 px-3 py-1">Hospitality</p>
+            </div>
+            <button class="flex items-end justify-end self-end w-50 text-zinc-500 font-semibold text-sm rounded-full px-2 py-1 hover:text-bold hover:text-white  transition-colors duration-200">
+              <span>
+                <img src="building-02.svg" alt="building" class="h-5 invert-50 hover:invert-100 mr-2">
+              </span>
+              <span>VIEW PROJECT</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="w-full h-80 bg-black/50 flex flex-row items-start justify-center rounded-lg gap-12 hover:outline-1 hover:outline-zinc-800 hover:outline-offset-4 transition-colors duration-500">
+          <div class="p-8 flex justify-start items-start flex-col gap-4">
+            <h2 class="text-3xl font-bold font-[Garamond]">St Nicholas School</h2>
+            <p class="text-sm text-zinc-500"><span class="font-semibold text-zinc-300">Education</span><span>  /  </span> Dundalk <span>  /  </span> 2025</p>
+            <p class="text-zinc-300 text-sm">Disability access certification and fire safety compliance for a modern wellness facility.</p>
+            <div class="flex flex-row justify-center gap-2 items-center text-sm text-zinc-500">
+              <p class="rounded-full border border-zinc-800 gap-1 px-3 py-1">Fire Safety</p>
+              <p class="rounded-full border border-zinc-800 gap-1 px-3 py-1">Education</p>
+            </div>
+            <button class="flex items-center justify-center gap-1 self-end w-50 mt-10 text-zinc-500 font-semibold text-sm rounded-full px-2 py-1 hover:text-bold hover:text-white  transition-colors duration-200">
+              <span>
+                <img src="building-02.svg" alt="building" class="h-5 invert-50 hover:invert-100 mr-2">
+              </span>
+              <span>VIEW PROJECT</span>
+            </button>
+          </div>
+          <img src="project2.webp" alt="Project 1" class="w-1/2 h-full object-cover rounded-lg">
+        </div>
+
+        <div class="w-full h-80 bg-black/50 flex flex-row items-start justify-center rounded-lg gap-10 hover:outline-1 hover:outline-zinc-800 hover:outline-offset-4 transition-colors duration-500">
+          <img src="project3.webp" alt="Project 3" class="w-1/2 h-full object-cover rounded-lg">
+          <div class="p-8 flex justify-start items-start flex-col gap-4">
+            <h2 class="text-3xl font-bold font-[Garamond]">C11 Align Wellness Centre</h2>
+            <p class="text-sm text-zinc-500"><span class="font-semibold text-zinc-300">Health & Wellness</span><span>  /  </span> Dundalk <span>  /  </span> 2025</p>
+            <p class="text-zinc-300 text-sm">Fire safety certification and compliance engineering for the new school extension.</p>
+            <div class="flex flex-row justify-center gap-2 items-center text-sm text-zinc-500">
+              <p class="rounded-full border border-zinc-800 gap-1 px-3 py-1">DAC</p>
+              <p class="rounded-full border border-zinc-800 gap-1 px-3 py-1">Wellness</p>
+            </div>
+            <button class="flex items-center justify-center gap-1 self-end w-50 mt-10 text-zinc-500 font-semibold text-sm rounded-full px-2 py-1 hover:text-bold hover:text-white  transition-colors duration-200">
+              <span>
+                <img src="building-02.svg" alt="building" class="h-5 invert-50 hover:invert-100 mr-2">
+              </span>
+              <span>VIEW PROJECT</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="z-20 min-h-screen mt-20 w-full bg-fixed mask-b-from-80% mask-t-from-80% text-white flex flex-col gap-4 justify-center items-center">
+      <div class="relative w-full min-h-screen flex flex-col gap-10 items-center justify-center mask-t-from-80%">
+        <h1 class="z-31 text-4xl font-semibold font-[Montserrat] mt-10 uppercase">What our clients say</h1>
+        
+        <div class="flex flex-row gap-10">
+          <div id="testimonial-card" class="w-140 h-90 flex font-[Montserrat] flex-col justify-between items-start  rounded-lg border border-zinc-200" style="background: url(project3.webp); background-size: cover; background-position: center; background-blend-mode:hard-light ;">
+          <div class="p-2">
+            <img src="quote-left.svg" alt="quote-left" class="relative top-2 left-5 h-8"/>
+            <p class="text-lg p-4 text-center bg-zinc-950 rounded-lg">F5 Engineering made what seemed like an overwhelming compliance process feel completely manageable. Their expertise in fire safety and accessibility was evident from day one.</p>
+          </div>
+
+          <div class="relative flex flex-col gap-2 text-xs mt-6 text-zinc-200 bg-zinc-950/90 w-full p-4 rounded-b-lg">
+            <span class="flex flex-row"><img src="building-02.svg" alt="building" class="h-4 invert-100  mr-2"><p class="font-semibold">Nuremore Estate</p></span>
+            <span class="flex flex-row"><img src="profile.svg" alt="profile" class="h-4 invert-100  mr-2"><p class="normal">Project Client</p></span>
+            <span class="flex flex-row"><img src="project.svg" alt="profile" class="h-4 invert-100  mr-2"><p class="normal">Property Development</p></span>
+            <span class="flex flex-row mt-2">
+              <p class="font-normal text-xs mr-2">RATING </p>
+              <img src="star-filled.svg" alt="profile" class="h-4 mr-1">
+              <img src="star-filled.svg" alt="profile" class="h-4 mr-1">
+              <img src="star-filled.svg" alt="profile" class="h-4 mr-1">
+              <img src="star-filled.svg" alt="profile" class="h-4 mr-1">
+              <img src="star-filled.svg" alt="profile" class="h-4 mr-1">
+            </span>
+          </div>
+        </div>
+
+        <div id="testimonial-card" class="w-140 h-90 flex font-[Montserrat] flex-col justify-between items-start  rounded-lg border border-zinc-200" style="background: url(project2.webp); background-size: cover; background-position: center; background-blend-mode:hard-light ;">
+          <div class="p-2">
+            <img src="quote-left.svg" alt="quote-left" class="relative top-2 left-5 h-8"/>
+            <p class="text-lg p-4 text-center bg-zinc-950 rounded-lg">F5 Engineering made what seemed like an overwhelming compliance process feel completely manageable. Their expertise in fire safety and accessibility was evident from day one.</p>
+          </div>
+
+          <div class="relative flex flex-col gap-2 text-xs mt-6 text-zinc-200 bg-zinc-950/90 w-full p-4 rounded-b-lg">
+            <span class="flex flex-row"><img src="building-02.svg" alt="building" class="h-4 invert-100  mr-2"><p class="font-semibold">St. Nicolas NS</p></span>
+            <span class="flex flex-row"><img src="profile.svg" alt="profile" class="h-4 invert-100  mr-2"><p class="normal">Project Client</p></span>
+            <span class="flex flex-row"><img src="project.svg" alt="profile" class="h-4 invert-100  mr-2"><p class="normal">Facility Compliance</p></span>
+            <span class="flex flex-row mt-2">
+              <p class="font-normal text-xs mr-2">RATING </p>
+              <img src="star-filled.svg" alt="profile" class="h-4 mr-1">
+              <img src="star-filled.svg" alt="profile" class="h-4 mr-1">
+              <img src="star-filled.svg" alt="profile" class="h-4 mr-1">
+              <img src="star-filled.svg" alt="profile" class="h-4 mr-1">
+              <img src="star-filled.svg" alt="profile" class="h-4 mr-1">
+            </span>
+          </div>
+        </div>
+
+        <div class="absolute w-full -z-10 inset-0 h-full  bg-[linear-gradient(to_right,#73737320_1px,transparent_1px),linear-gradient(to_bottom,#73737320_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+      </div>
+    </div>
+    </section>
+    <section class="min-h-screen w-full p-10">
+
+    </section>
+</body>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  const header = document.getElementById('header');
+  const logo = document.getElementById('navlogo');
+  const main = document.getElementById('main');
+  const introduction = document.getElementById('introduction');
+  const maintop = document.getElementById('maintop');
+  const testimonials = document.getElementById('testimonials');
+  const testimonialCard = document.querySelectorAll('testimonial-card');
+
+  window.addEventListener('scroll', () => {
+    // Get the bottom position of the header
+    const headerBottom = header.offsetHeight;
+
+    if (window.scrollY > headerBottom - 50) {
+      // SCROLLED TO BLACK SECTION: Apply dark styles
+      logo.classList.add('invert');
+      nav.classList.remove('border-zinc-900','bg-white/50','text-zinc-950');
+      nav.classList.add('border-white','bg-zinc-950/50','text-white');
+    } else {
+      // BACK ON WHITE HEADER: Apply light styles
+      nav.classList.add('border-zinc-900','bg-white/50','text-zinc-950');
+      nav.classList.remove('border-white','bg-zinc-950/50','text-white');
+      logo.classList.remove('invert');
+    }
+  });
+
+   window.addEventListener('scroll', () => {
+    // Get the bottom position of the header
+    const mainBottom = introduction.offsetHeight;
+
+    if (window.scrollY > mainBottom) {
+      maintop.classList.add('translate-y-18','transition-transform','duration-600','ease-out');
+    } else {
+      maintop.classList.remove('translate-y-18','transition-transform','duration-600','ease-out');
+    }
+   });
+
+    window.addEventListener('scroll', () => {
+    // Get the bottom position of the header
+    const testimonialsBottom = testimonial.offsetHeight;
+
+    if (window.scrollY > testimonialsBottom) {
+      testimonialCard.classList.add('translate-y-10','transition-transform','duration-600','ease-out');
+    } else {
+      testimonialCard.classList.remove('translate-y-10','transition-transform','duration-600','ease-out');
+    }
+   });
+</script>
+
+</html>

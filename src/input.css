@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* This automatically creates font-nevis, font-manrope, etc. */
+  --font-nevis: "Nevis", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-menata: "Menata", sans-serif;
+}
+
+@font-face {
+  font-family: 'Nevis';
+  src: url('./fonts/nevis.woff2') format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Pairings';
+  src: url('./fonts/pairings.woff2') format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/manrope.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/montserrat.woff2') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Menata Story';
+  src: url('./fonts/menata-story.woff2') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./fonts/garamond.woff2') format('woff2');
+  font-weight: bold;
+}
