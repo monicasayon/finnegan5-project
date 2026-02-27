@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F5 Services</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="icon" href="../src/f5logo-500x500.webp" type="image/webp">
+    <link href="../tailwind.config.js" rel="preload" as="script">
+</head>
+
+<body class="bg-black w-full h-screen box-border p-0 m-0 flex flex-col justify-start items-center">
+    <div id="nav"></div>
+    <header class="min-h-screen text-white">
+    </header>
+    <div id="footer" class="w-full"></div>
+</body>
+
+<script>
+    fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    });
+
+    fetch('nav.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('nav').innerHTML = data;
+    });
+
+</script>
+
+</html>

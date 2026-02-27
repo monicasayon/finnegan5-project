@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnegan 5</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="icon" href="../src/f5logo-500x500.webp" type="image/webp">
+    <link href="../tailwind.config.js" rel="preload" as="script">
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const content = document.getElementById('hero-img');
+      const aboutUs = document.getElementById('about-us');
+
+      setTimeout(() => {
+        content.classList.remove('-translate-x-20');
+        content.classList.add('-translate-x-10','transition-transform','duration-600','ease-out');
+        aboutUs.classList.add('-translate-y-6','transition-transform','duration-500','ease-out');
+      }, 200); 
+    });
+
+</script>
+
+<body class="bg-black w-full h-screen box-border p-0 m-0 flex flex-col justify-start items-center">
+    <div id="nav"></div>
+    <header class="w-full min-h-50 flex flex-row justify-start items-around mt-50 gap-10 text-white">
+        <div id="hero-img" class="w-2/3 flex flex-col justify-start items-end font-[Montserrat] -translate-x-20">
+            <img src="st_nicholas.webp" alt="Hero Scaffold">
+            <p class="text-right text-xs text-zinc-500">St. Nicholas NS</p>
+        </div>
+        <div class="w-1/3 text-white flex flex-col justify-start items-start mt-10">
+            <h1 id="about-us" class="text-4xl font-semibold font-[Garamond]">About F5 Engineering</h1>
+            <p class="font-[Montserrat] italic">Founded on a commitment to excellence in fire safety, accessibility, and engineering design — F5 Engineering delivers specialist compliance consultancy across Ireland.</p>
+        </div>
+        
+    </header>
+
+    <div class="w-full flex flex-row justify-between ">
+        <div id="services" class="w-1/2 h-auto p-16 ">
+            <h1 class="uppercase font-[Montserrat] text-zinc-300 mt-6 mb-6 ">Qualifications & Services</h1>
+            <div class="flex flex-wrap gap-3">
+                <div class="h-10 px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>Fire Safety Engineering</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>Fire Fire Risk Assessment</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>FSC Applications</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>DAC Applications</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>PSDP Services</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>Building Regulations</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>TGD B Compliance</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>TGD M Compliance</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>Universal Design</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>Construction Safety</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>3D Visualization</p>
+                </div>
+                <div class="px-4 py-2 rounded-lg border border-zinc-800 bg-zinc-900/30 text-zinc-400 font-figtree text-sm">
+                    <p>Interior Design Support</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="w-1/2 grid grid-cols-2 gap-4 p-10">
+            <div class="p-8 text-center text-white">
+                <h1 class="text-4xl font-semibold">5</h1>
+                <p class="text-zinc-400">Core Disciplines</p>
+            </div>
+            <div class="p-8 text-center">
+                <h1 class="text-4xl font-semibold text-white">50+</h1>
+                <p class="text-zinc-400">Projects Delivered</p>
+            </div>
+            <div class="p-8 text-center">
+                <h1 class="text-4xl font-semibold text-white">100%</h1>
+                <p class="text-zinc-400">Compliance Rate</p>
+            </div>
+            <div class="p-8 text-center">
+                <h1 class="text-4xl font-semibold text-white">32</h1>
+                <p class="text-zinc-400">Counties Served</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="garret" class="h-120 text-white p-16 font-[Montserrat] flex flex-row gap-10 mt-10 justify-center items-center">
+        <img src="construction.webp" alt="construction site" class=" -translate-x-20 h-90 border-r-20 border-white">
+        <div>
+            <h1 class="uppercase text-5xl  text-white  border-l-4 pl-4">Garret Finnegan</h1>
+            <p class="text-xs uppercase mt-2 mb-6 text-zinc-400">Managing Director  ·  Finnegan 5 Design and Engineering Ltd</p>
+            <div class="text-zinc-200">
+            <p >Gareth founded F5 Engineering to bring specialist fire safety and compliance expertise to Ireland's construction sector. With deep knowledge of Irish building regulations and a hands-on approach to every project, Gareth leads F5's delivery across all five core disciplines.</p><br>
+            <p>His background spans fire safety engineering, disability access consultancy, and health & safety coordination — giving clients a single, trusted point of contact for their compliance needs.</p><br>
+            <p>Gareth works directly with architects, developers, and project teams to ensure compliance is integrated from the earliest design stages, preventing costly issues and keeping projects on schedule.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class=" flex flex-row p-16 mb-10" >
+        <div class="w-1/2 p-10 bg-zinc-200 rounded-l-lg">
+            <h1 class="text-4xl font-semibold font-[Garamond] text-zinc-900 mt-4 mb-4">Our Story</h1>
+            <p class="font-[Montserrat] gap-1.5 text-black text-sm">F5 Engineering was founded with a clear purpose: to provide Ireland's construction industry with expert, responsive, and detail-oriented compliance consultancy.</p><br>
+            <p class="font-[Montserrat] gap-1.5 text-black text-sm">Based in Ardee, Co. Louth, we work with developers, architects, and project teams across the country — delivering fire safety engineering, disability access consultancy, health & safety coordination, and design support from early concept through to final handover.</p><br>
+            <p class="font-[Montserrat] gap-1.5 text-black text-sm">Our name reflects our approach. F5 — a fresh perspective on every project. We believe compliance shouldn't be an afterthought or a bottleneck. It should be integrated, clear, and solution-focused from the start.</p>
+            </div>
+        <div class="w-1/2 p-10 bg-zinc-900 rounded-r-lg">
+            <h1 class="text-4xl font-semibold font-[Garamond] text-zinc-100 mt-4 mb-4">Our Approach</h1>
+            <p class="font-[Montserrat] gap-1.5 text-zinc-100 text-sm">We pride ourselves on being responsive, detail-oriented, and solution-focused. Every project receives dedicated attention — no matter the scale or complexity.</p><br>
+            <p class="font-[Montserrat] gap-1.5 text-zinc-100 text-sm">Where others see regulatory hurdles, we see opportunities to add value. Our integrated approach means fire safety, accessibility, and health & safety are considered together, reducing risk and avoiding costly redesigns.</p><br>
+            <p class="font-[Montserrat] gap-1.5 text-zinc-100 text-sm">We provide clear, concise, and reliable consultancy throughout the project lifecycle — giving you confidence that your project meets every requirement.</p>
+        </div>
+    </div>
+
+    <div id="footer" class="w-full"></div>
+    
+</body>
+</html>
+
+<script>
+  fetch('footer.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('footer').innerHTML = data;
+  });
+
+  fetch('nav.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('nav').innerHTML = data;
+  });
+
+</script>
